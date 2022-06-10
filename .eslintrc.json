@@ -22,7 +22,7 @@
     }
   },
   "rules": {
-    "comma-dangle": 2,
+    "comma-dangle": 0,
     "prettier/prettier": "error",
     "react/jsx-filename-extension": [
       1,
@@ -36,7 +36,7 @@
     "object-curly-newline": ["error", { "consistent": true }],
     "no-console": 0, //不禁用console
     "no-debugger": 2, //禁用debugger
-    "no-var": 0, //对var警告
+    "no-var": 1, //对var警告
     "semi": 0, //不强制使用分号
     "no-irregular-whitespace": 0, //不规则的空白不允许
     "no-trailing-spaces": 1, //一行结束后面有空格就发出警告
@@ -85,22 +85,20 @@
     "react/jsx-uses-react": 1, //防止反应被错误地标记为未使用
     "react/jsx-uses-vars": 2, //防止在JSX中使用的变量被错误地标记为未使用
     "react/no-danger": 0, //防止使用危险的JSX属性
-    "react/no-did-mount-set-state": 0, //防止在componentDidMount中使用setState
+    "react/no-did-mount-set-state": 1, //防止在componentDidMount中使用setState
     "react/no-did-update-set-state": 1, //防止在componentDidUpdate中使用setState
     "react/no-direct-mutation-state": 2, //防止this.state的直接变异
     "react/no-multi-comp": 2, //防止每个文件有多个组件定义
     "react/no-set-state": 0, //防止使用setState
     "react/no-unknown-property": 2, //防止使用未知的DOM属性
     "react/prefer-es6-class": 2, //为React组件强制执行ES5或ES6类
-    "react/prop-types": 0, //防止在React组件定义中丢失props验证
+    "react/prop-types": 1, //防止在React组件定义中丢失props验证
     "react/react-in-jsx-scope": 2, //使用JSX时防止丢失React
     "react/self-closing-comp": 0, //防止没有children的组件的额外结束标签
     "react/sort-comp": 2, //强制组件方法顺序
-
-    "react/no-array-index-key": 0, //防止在数组中遍历中使用数组key做索引
+    "react/no-array-index-key": 1, //防止在数组中遍历中使用数组key做索引
     "react/no-deprecated": 1, //不使用弃用的方法
     "react/jsx-equals-spacing": 2, //在JSX属性中强制或禁止等号周围的空格
-
-    "react/jsx-one-expression-per-line": 2
+    "react/jsx-one-expression-per-line": 2 //每一行都限制为一个表达式
   }
 }
