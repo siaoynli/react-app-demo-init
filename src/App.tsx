@@ -1,4 +1,5 @@
 import React, { useEffect } from 'react';
+import { Button } from '@arco-design/web-react';
 import logo from './logo.svg';
 import './App.css';
 
@@ -16,14 +17,7 @@ function App() {
           <code>src/App.tsx</code>
           and save to reload.
         </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+        <Button type="primary">Hello Arco</Button>
       </header>
     </div>
   );
