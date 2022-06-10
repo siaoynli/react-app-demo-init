@@ -64,10 +64,5 @@
     "src/**/*.{js,jsx,ts,tsx,json,css,scss,md}": [
       "prettier --write"
     ]
-  },
-  "husky": {
-    "hooks": {
-      "pre-commit": "./node_modules/.bin/lint-staged"
-    }
   }
 }
